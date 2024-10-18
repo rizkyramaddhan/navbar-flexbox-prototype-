@@ -1,0 +1,35 @@
+/* responsive Mobile */
+@media screen and (max-width: 992px) {
+    header nav ul {
+        width: 50%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: blueviolet;
+        width: 50%;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transition: all 1s;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+
+    header nav .list-active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    header nav .menu-toggle {
+        display: flex;
+    }
+}
+
